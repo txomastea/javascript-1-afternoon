@@ -56,6 +56,8 @@ function doubleCheck(arr) {
   return arr
 }
 
+
+
 //////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
@@ -106,12 +108,13 @@ let ruff = "Woof woof";
 function looper(arr) {
   let mySum = 0;
   for (var i = 0; i < arr.length; i++){
-    if(arr[i] % 2 === 1 || arr[i] >= 100) {
-      arr[i] + mySum
+    if(arr[i] % 2 !== 0 || arr[i] >= 100) {
+       mySum = arr[i] + mySum;
     }
   }
+  return mySum
 }
-
+looper([1,3,5]);
 
 
 //////////////////PROBLEM 7////////////////////
